@@ -1,0 +1,61 @@
+//==================Project
+Login
+Home
+Add user
+remove user
+list users
+and delete user
+
+
+Git global setup
+git config --global user.name ""
+git config --global user.email ""
+
+Create a new repository
+git clone repo_url
+cd pgk-dashboard
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Push an existing folder
+cd existing_folder
+git init
+git remote add origin repo_url
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Push an existing Git repository
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin repo_url
+git push -u origin --all
+git push -u origin --tags
+
+
+push an existing repository from the command line
+
+git remote add origin repo_url
+git branch -M main
+git push -u origin main
+
+
+> git init
+> git remote add origin repo_url
+> git remote
+> git push - origin master
+
+
+> git add . / git add *.html / git add filename
+> git rm --cached filename(un adding file)
+> git commit -m "this is my commit message"
+> git push origin master --force
+enter username: 
+enter Password:
+
+> git diff
+> git reset
+> git branch
+> git checkout
