@@ -10,7 +10,7 @@ class Home extends Component {
     }
 
     clickMe = () => {
-        console.log("----testing");
+        console.log("----testing ");
         this.setState({
             name: "John",
             age: 42,
