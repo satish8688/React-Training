@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import { Route, Switch, Link } from 'react-router-dom';
+
+
 import Home from './Home';
 import Dribble from "./Dribble";
+import Register from './Register';
 
 
 class App extends Component {
@@ -31,8 +35,25 @@ class App extends Component {
   render() {
 
     return (<>
-      {/* <Dribble /> */}
-      <Home />
+      {/* <Dribble />
+      <Home /> */}
+      <ul>
+        <li>
+          {/* <a href="/">Initial</a> */}
+          <Link to="/">Initial</Link>
+        </li>
+        <li>
+          {/* <a href="/home">Home</a> */}
+          <Link to="/home">Home</Link>
+        </li>
+      </ul>
+
+      <Switch>
+        <Route path="/register" component={Register} />
+        <Route path="/home" exact component={Home} />
+        <Route path="/" exact component={Dribble} />
+        {/* <Route path="/home/:id" component={Dribble} /> */}
+      </Switch>
     </>)
   }
 }
